@@ -104,7 +104,7 @@ public class Simulator {
 			
 			if(this.hotSpotRimanenti>0) {
 				// mi sposto su altro h.s.
-				int spostamento = (int)(Math.random()*11)+10 ;
+				int spostamento = (int)(Math.random()*11)+10 ; //casuale da 10 a 20 minuti
 				this.tecniciOccupati++;
 				this.hotSpotRimanenti--;
 				queue.add(new Event(time+spostamento, EventType.INIZIO_HS, tecnico));
